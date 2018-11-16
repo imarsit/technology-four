@@ -1,0 +1,90 @@
+extends layout
+
+block vars
+    - let title = 'OLM'
+
+block content
+    .indexIco
+    ul#menu
+        li.active(data-menuanchor='page1')
+            a(href='#page1')
+        li(data-menuanchor='page2')
+            a(href='#page2')
+        li(data-menuanchor='page3')
+            a(href='#page3')
+        li(data-menuanchor='page4')
+            a(href='#page4')
+        li(data-menuanchor='page5')
+            a(href='#page5')
+    #dowebok
+        include index/indexPart1
+        include index/indexPart2
+        include index/indexPart3
+        include index/indexPart4
+        include index/indexPart5
+
+    .footDiv
+        .wal
+            a.logo(href='/')
+                img(src='/public/images/home/logo2.png')
+            .msg
+                |  © 2018 火星云 版权所有
+                em  火星人信息科技有限公司 桂ICP备15003644号-2
+        .bfoot
+            .wal
+        div(style='display:none')
+
+
+
+block script
+    script.
+        var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "/public/javascript/hm.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+            })();
+
+            $(function(){
+            indexPart1Fun();
+            $(window).resize(function(){
+                indexPart1Fun();
+                })
+            $('.indexPart1').slick({
+                dots: true,
+                infinite: true,
+                autoplay:true,
+                arrows: false,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade:true
+                });
+            })
+            function indexPart1Fun(){
+            $('.indexPart1').find('.slick').height($(window).height());
+            }
+
+            $(function(){
+            if($(window).width()>1000){
+            $('#dowebok').fullpage({
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                menu: '#menu',
+                afterRender: function(anchorLink, index){
+                $('.section:first').addClass('on');
+                },
+                afterLoad: function(anchorLink, index){
+                $('.section').removeClass('on');
+                $('.section').eq(index-1).addClass('on');
+                if(index==5){
+                    $('.indexIco').addClass('on');
+                    $('.footDiv').addClass('on');
+                    }else{
+                    $('.indexIco').removeClass('on');
+                    $('.footDiv').removeClass('on');
+                    }
+                }
+            });
+            }
+            });

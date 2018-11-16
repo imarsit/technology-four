@@ -1,0 +1,124 @@
+extends layout
+
+block vars
+    - let title = '电信'
+
+block content
+    .pageBanner2(style='background:#000')
+        .wal
+            .title
+                div
+                    | 电信行业APM 
+                    span 典型案例
+                | Telecom industry APM typical cases
+            .content
+                | 东方龙马在全国超过400个大客户的数据库及应用中间件管理经验,管理超过1500个系统,涉及政府、金融、电信、税务、制造等各个行业:
+            .more
+                a(href='javascript:;') 了解详情
+    .pageBg1.caseShow2_01.listHover
+        ul
+            li
+                .wal.slide-B
+                    .box
+                        .title
+                            div
+                                em 客户概况
+                            | Customer situation
+                        .content
+                            | 西南某联通信息化部门管理着众多核心IT系统和数据库的运维，IT行业发展到今天已经成为企业应用系统不可或缺的基础和支撑，因此对IT系统的管理，尤其是核心应用系统的管理变得越来越迫切和重要。
+                        .imgDiv
+                            img(src='/public/images/telecom/nimg249.png')
+            li.liOdd
+                .wal.slide-B
+                    .box
+                        .title
+                            div
+                                em 基础架构
+                            | Infrastructure
+                        .content
+                            | 该联通的企业应用系统基本上由基础架构（网络、防火墙、路由器、交换机、主机等）和应用（数据库、应用服务器 、业务应用）构成。其中，直接与业务最密切相关的就是应用，而某联通信息化部门的目标就是把运维工作的重点从平台延伸到对应用的运维。
+                        .imgDiv
+                            img(src='/public/images/telecom/nimg415.png')
+            li.li_01
+                .wal.slide-B
+                    .box
+                        .title
+                            div 方案与决心
+                            | Scheme and determination
+                        .content
+                            | 当西南某联通和东方龙马进行过关于新一代应用性能管理的技术交流之后，认为龙马的方案这恰恰符合他们下一步对运维工作的期望，经过近一步测试验证后，更坚定了他们使用这种方案的决心。最终，西南某联通信息化部门使用东方龙马应用性能管理解决方案，统一监控和管理了客服系统和CRM系统，从最终用户体验出发，不但能快速发现和定位影响应用性能的瓶颈点，更是帮助我们提升了用户的感受，有效地降低了用户的临柜时长，提高了用户的满意度。
+                        .imgDiv
+                            img(src='/public/images/telecom/nimg365.png')
+    .caseShow2_02
+        .box
+            .bg
+                .title
+                    div 监控实例
+                    | Monitoring Example
+                .msg
+                    | 该联通一个监控实例
+                    br
+                    | 快速定位到性能的瓶颈在于应
+                    br
+                    | 用服务器本身而不是数据库
+            i
+            i.i-1
+    .caseShow2_03
+        .wal.slide-B
+            .title
+                div 客户评价
+                | Customer evaluation
+            .content
+                | 为提升客户临柜体验，改善排队现象，西南某联通联通实际上已经推出了多渠道自助服务。 但是正如用户联通信息化部门领导所说："对客户来说，最关心的是业务办理是否方便。"虽然柜面网点布局逐渐地延伸，分公司还通过自助服务、高峰提醒、增设临时窗口、受理与处理分离等方式办理业务，但因为某些应用系统的性能瓶颈仍然会导致用户的等待时间过长，造成用户满意度的降低，因此，通过某种手段记录并监控用户的临柜时长，并迅速发现引发性能问题的瓶颈点，对西南某联通的信息化部门来说至关重要。xx联通信息化部门的副总经理这样评价东方龙马："龙马一直是我们的服务提供商，这次为我们提供的应用性能管理解决方案，有效地帮助了我们管理了用户体验，尤其是帮我我们了解了真实的用户临柜时长，并为性能的提升提出了实用的建议"。
+    .phoneBg
+        .wal
+            .caseShow_08.listHover.slide-B
+                ul
+                    li.li_01
+                        .name
+                            a(href='telecom') 电信行业APM
+                        .box
+                            .content
+                                | 通过最终用户的体验测量应用的性能，是对业务系统性能最有效的度量。安码龙的最终用户体验管理（EUEM）的解决方案，给你的不只是了解用户体验，而是真正理解它，将终端用户的使用环境及企业业务质量有效的管理在一起。
+                            .btn
+                                a(href='telecom')
+                    li.li_02
+                        .name
+                            a(href='finance') 金融行业BPM
+                        .box
+                            .content
+                                | 该联通的企业应用系统基本上由基础架构（网络、防火墙、路由器、交换机、主机等）和应用（数据库、应用服务器 、业务应用）构成。其中，直接与业务最密切相关的就是应用，而某联通信息化部门的目标就是把运维工作的重点从平台延伸到对应用的运维。
+                            .btn
+                                a(href='finance')
+                .h10
+    a.topA(href='javascript:;')
+
+block script
+    script.
+        function share(type) {
+            var title = '东方龙马';
+            var text = '东方龙马';
+            var src = document.location.toString();
+            var pic = 'http://' + document.domain + '/d/file/2015-06-12/1ae29786d9678d2335a9feed270e29ef.jpg';
+            var url = '';
+            if (type == "t") {
+                url = "http://v.t.qq.com/share/share.php?site=";
+                url += "&url=" + encodeURIComponent(src);
+                url += "&title=" + encodeURIComponent(title + " - " + text);
+
+                var top = (window.screen.availHeight - 30 - 600) / 2;
+                var left = (window.screen.availWidth - 10 - 600) / 2;
+                window.open(url, '', 'width=600,height=600,top=' + top + ',left=' + left + ',scrollbars=yes,resizable=yes');
+                return false;
+            } else if (type == "s") {
+                url = "http://service.t.sina.com.cn/share/share.php?appkey=";
+                url += "&url=" + encodeURIComponent(src);
+                url += "&title=" + encodeURIComponent(title + " - " + text);
+
+                var top = (window.screen.availHeight - 30 - 600) / 2;
+                var left = (window.screen.availWidth - 10 - 600) / 2;
+                window.open(url, '', 'width=600,height=600,top=' + top + ',left=' + left + ',scrollbars=yes,resizable=yes');
+                return false;
+            }
+
+        }

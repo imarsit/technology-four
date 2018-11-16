@@ -1,0 +1,116 @@
+extends layout
+
+block vars
+    - let title = '新闻浏览'
+
+block content
+
+    .pageNav
+        ul
+            li
+                a.on(href='news') 公司动态
+                em
+            li
+                a(href='news') 行业资讯
+    .pageBanner2(style='background:#000')
+        .wal
+            .title
+                div 新闻中心
+            .content 近年来，我们专注于提供全系列企业级性能管理方案和相关的IT服务，在帮助用户提高业务效率和整体生产力的同时，降低运营和运维成本。
+            .more
+                a(href='') 了解详情
+    .zbanner
+    .phoneBg
+        .wal
+            .pageNow2
+                a.back(href='JavaScript:history.back(-1);') 返回列表
+                div
+                    a(href='/') 首页
+                    |  / 
+                    a(href='news') 新闻资讯
+                    |  / 
+                    span 公司动态
+            .fl.w715
+                .newShow
+                    .title 热烈庆祝安码龙科技有限公司上海研发中心于2016年1月21日正式启用
+                    .time 来源：　　　日期：2016-08-21
+                    .content
+                        p   "北京安码龙科技有限公司"(简称安码龙)于2015年12月在北京正式成立，其研发中心设立于上海。
+                        p
+                            br
+                        p
+                            img(src='/public/images/news_show/1471943800121003.jpg')
+                        p
+                            br
+                        p
+                            br
+                        p   安码龙系由东方龙马软件集团所投资创建，是一家致力于提供IT应用性能管理的高新技术企业。
+                        p
+                            br
+                        p   公司致力于帮助企业级用户改善应用性能，降低IT运维成本，改善客户应用终端用户体验，帮助提升企业的IT交付质量。
+                        p
+                            br
+                        p
+                            br
+                        p
+                            strong 公司的产品有以下两大主轴：
+                        p
+                            br
+                        p   1.基于性能管理的基础平台，该平台包括APM（应用性能管理），基础组件性能管理（主机资源监控，操作系统监控，数据库监控），网络性能管理等产品。
+                        p
+                            br
+                        p   2.基于大数据架构的一体化性能管理平台，公司创新型的一体机私有云解决方案将为用户的性能预测和性能定位分析提供全程护航。 
+                        p    
+                        p
+
+                .pageNum2
+                .pageNum3
+                    ul
+                        li
+                            a(href='javascript:;') 上一篇：
+                            a(href='news') 返回列表
+                        li
+                            a(href='javascript:;') 下一篇：
+                            a(href='javascript:;') 东方龙马受邀2015甲骨文客户支持服务合作伙伴会议圆满结束
+            .fr.w370
+                .sideTitle
+                    div 解决方案
+                    | SOLUTION
+                .sideList1
+                    ul
+                        li
+                            a(href='life_cycle')
+                                img(src='/public/images/news_show/01e1c5f8e528c78342147b3808a091d4.png')
+                                | 数据生命周期服务解决方案
+                        li
+                            a(href='perform')
+                                img(src='/public/images/news_show/9023cb9ec3bc296e4feb99c8aa7986ec.png')
+                                | 全系列性能管理解决方案
+                        li
+                            a(href='big_data')
+                                img(src='/public/images/news_show/2c04ac34aa8c9af94e10f573e0d28e6f.png')
+                                | 大数据分析解决方案
+                .pageMore2
+                    a(href='news') 查看更多>>
+                .sideTitle
+                    div 新闻中心
+                    | News Center
+                .sideList2
+                    ul
+                        li
+                            a(href='javascript:;') 大数据的数据化能让算命公司上市？---东方龙...
+                        li
+                            a(href='javascript:;') 大数据环境下的意图搜索技术 | 东方龙马...
+                        li
+                            a(href='javascript:;') 动态 | OLM受邀参展甲骨文云大会圆落幕！...
+                        li
+                            a(href='javascript:;') OLM受邀参加11.9甲骨文云大会 | OLM与你上...
+                        li
+                            a(href='javascript:;') 大数据的十三个应用场景
+                .pageMore2
+                    a(href='news') 查看更多>>
+            .h50
+    a.topA(href='javascript:;')
+
+block script
+    script.

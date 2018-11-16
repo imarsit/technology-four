@@ -1,0 +1,220 @@
+extends layout
+
+block vars
+    - let title = '性能'
+
+block content
+    .pageBanner(style='background:#1d95cc')
+        .wal
+            .pageNow
+                a(href='/') 首页
+                |  > 
+                a(href='solution') 解决方案
+                |  > 
+                a(href='perform') 全系列性能管理解决方案
+            .box
+                .name
+                    div 解决方案
+                    em Solutions
+                p
+                    | 我们专注于提供全系列企业级性能管理方案和相关的IT服务，在帮助用户提高业务效率和整体生产力的同时，降低运营和运维成本。全系列性能管理方案包括：数据库管理，交易性能管理，核心业务保障管理，网络性能管理和运营大数据分析等。
+                p.p-1 东方龙马是专注于高端软件技术，以"数据库服务"及"应用性能管理"为核心业务的国内领先IT专业服务公司
+            .list
+                ul
+                    li
+                        a(href='life_cycle')
+                            img(src='/public/images/perform/01e1c5f8e528c78342147b3808a091d4.png')
+                    li
+                        a(href='perform')
+                            img(src='/public/images/perform/9023cb9ec3bc296e4feb99c8aa7986ec.png')
+                    li
+                        a(href='big_data')
+                            img(src='/public/images/perform/2c04ac34aa8c9af94e10f573e0d28e6f.png')
+                .h10
+    .phoneBg
+        .wal
+            a(href='javascript:;', name='wal')
+
+            .Solution_01.slide-B
+                .name
+                    div
+                        em 全系列性能管理解决方案
+                    | Full Series Performance Management Solutions
+                .msg
+                .list.list-1
+                    dl
+                        dd
+                            a.on(href='javascript:;')
+                                div
+                                    img(src='/public/images/perform/nimg87_6.png')
+                                    img.img2(src='/public/images/perform/nimg87_6_1.png')
+                                | 应用性能管理
+                        dd
+                            a(href='javascript:;')
+                                div
+                                    img(src='/public/images/perform/nimg87_7.png')
+                                    img.img2(src='/public/images/perform/nimg87_7_1.png')
+                                | 业务性能管理
+                        dd
+                            a(href='javascript:;')
+                                div
+                                    img(src='/public/images/perform/nimg87_8.png')
+                                    img.img2(src='/public/images/perform/nimg87_8_1.png')
+                                | 网络性能管理
+                        dd
+                            a(href='javascript:;')
+                                div
+                                    img(src='/public/images/perform/nimg87_9.png')
+                                    img.img2(src='/public/images/perform/nimg87_9_1.png')
+                                | 虚拟化性能管理
+                .h10
+                .btn
+                    div
+                        img(src='/public/images/perform/nimg32.png')
+                    | 方案详情
+            .Solution_02.slide-B
+                .btnDiv.btnDiv-2
+                    .img.img-2
+                        img(src='/public/images/perform/img336.png' usemap='#Map')
+                    map#Map(name='Map')
+                        area(shape='poly', coords='170,169,4,3,330,4', href='javascript:;')
+                        area(shape='poly', coords='170,168,327,326,331,177,332,6', href='javascript:;')
+                        area(shape='poly', coords='167,170,9,328,162,328,326,327', href='javascript:;')
+                        area(shape='poly', coords='167,170,3,5,6,328', href='javascript:;')
+                    .list.list-2
+                        ul
+                            li.li_01.on
+                                img(src='/public/images/perform/img336_1.png')
+                                img.img2(src='/public/images/perform/img336_1on.png')
+                            li.li_02
+                                img(src='/public/images/perform/img336_2.png')
+                                img.img2(src='/public/images/perform/img336_2on.png')
+                            li.li_03
+                                img(src='/public/images/perform/img336_3.png')
+                                img.img2(src='/public/images/perform/img336_3on.png')
+                            li.li_04
+                                img(src='/public/images/perform/img336_4.png')
+                                img.img2(src='/public/images/perform/img336_4on.png')
+                .box-2
+                    .name
+                        div 应用性能管理
+                        | APM
+                    .content
+                        | APM Suite套件是一种面向企业的应用程序性能管理 (APM) 解决方案,专为大规模分布式环境(数据中心或云计算环境)中的应用程序提供高效的性能管理解决方案，可在重要任务的应用程序中监控、排除故障和诊断问题。
+
+                    .btn
+                        a(href='#') 立即咨询
+            .Solution_04.SolutionDD.slide-B
+                .fl
+                    h2 方案
+                    .list
+                        ul.list-paddingleft-2
+                            li
+                                p 最终用户体验的监控
+                            li
+                                p 代码级别的性能分析
+                            li
+                                p 易于操作的安装部署方式
+                            li
+                                p 应用系统整体拓扑架构的识别
+                            li
+                                p 事务交易的实时关联跟踪
+                            li
+                                p 应用程序的深入诊断
+                            li
+                                p 服务器监控
+                            li
+                                p 运维报告
+                .fr
+                    h2 优势
+                    .content.content-1
+                        | APM（Application Performance Management，应用性能管理）是一种全新的网络及应用管理理念，不同于传统的NMS（Network Management System，基于网元的监控方案），APM侧重对关键业务应用进行监控、优化，提高关键应用的可靠性和服务质量，保证用户获得良好的访问体验。APM强调业务系统相关组件的自动关联分析和智能定位，大大提高了运维主动性和能见度，让IT组织更好地监控用户体验和管理响应时间。.... 
+                        a.more(href='javascript:;')
+                    .content.content-2
+                        | APM（Application Performance Management，应用性能管理）是一种全新的网络及应用管理理念，不同于传统的NMS（Network Management System，基于网元的监控方案），APM侧重对关键业务应用进行监控、优化，提高关键应用的可靠性和服务质量，保证用户获得良好的访问体验。APM强调业务系统相关组件的自动关联分析和智能定位，大大提高了运维主动性和能见度，让IT组织更好地监控用户体验和管理响应时间。使整个应用可视化，从浏览器、应用服务器到后端数据库；监控方案支持主流架构如J2EE等主流架构；代码级诊断，使瓶颈的故障排除速度提升90%；通过单一虚拟面板进行跨层级的监测；性能管理基线等。
+                        a.more(href='javascript:;')
+                .h10
+
+            .Solution_03.slide-B
+                .title
+                    div 合作伙伴
+                    | cooperative partner
+                .list3.listHover
+                    ul
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/perform/16e246b627e8d22c86806455bc1ac5f3.png')
+                                    img.img2(src='/public/images/perform/de974a6f048b3ba181405e6e28194033.png')
+                            .name
+                                | 安码龙APProbe产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/perform/7b171b51cc4bffaf476811e373f0b285.png')
+                                    img.img2(src='/public/images/perform/0df1346674345bc49940e0dcf6675c7e.png')
+                            .name
+                                | APPdynamics产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/perform/37eab058fd4fe424fbf90ed061e6d546.png')
+                                    img.img2(src='/public/images/perform/279a6fa7cac34c334f3c03fc54090552.png')
+                            .name
+                                | DELL数据库管理产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/perform/de80f2052457e56f76f8d9824f9aa64b.png')
+                                    img.img2(src='/public/images/perform/3c2addab3cf301784312d1dbc2ada621.png')
+                            .name
+                                | Easyview产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/perform/66726786b8e8f081bf5668547733fe29.png')
+                                    img.img2(src='/public/images/perform/2be7e50b7624331e2f264d654ee3ada7.png')
+                            .name
+                                | Veeam虚拟化产品
+                                i
+                    .h10
+                .list2
+                    ul
+                        li.li_01
+                            a(href='life_cycle')
+                                .img
+                                    img(src='/public/images/perform/01e1c5f8e528c78342147b3808a091d4.png')
+                                .name 数据生命周期服务解决方案
+                                .btn
+                        li.li_02
+                            a(href='perform')
+                                .img
+                                    img(src='/public/images/perform/9023cb9ec3bc296e4feb99c8aa7986ec.png')
+                                .name 全系列性能管理解决方案
+                                .btn
+                        li.li_03
+                            a(href='big_data')
+                                .img
+                                    img(src='/public/images/perform/2c04ac34aa8c9af94e10f573e0d28e6f.png')
+                                .name 大数据分析解决方案
+                                .btn
+                    .h10
+    a.topA(href='javascript:;')
+
+block script
+    script.
+        $(function(){
+        $('.Solution_07').find('.list').slick({
+        dots: true,
+        infinite: true,
+        autoplay:true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        });
+        });

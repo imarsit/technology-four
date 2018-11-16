@@ -1,0 +1,152 @@
+extends layout
+
+block vars
+    - let title = '解决方案'
+
+block content
+    .pageBanner(style='background:#1d95cc')
+        .wal
+            .pageNow
+                a(href='/') 首页
+                |  > 
+                a(href='solution') 解决方案
+            .box
+                .name
+                    div 解决方案
+                    em Solutions
+                p
+                    | 我们专注于提供全系列企业级性能管理方案和相关的IT服务，在帮助用户提高业务效率和整体生产力的同时，降低运营和运维成本。全系列性能管理方案包括：数据库管理，交易性能管理，核心业务保障管理，网络性能管理和运营大数据分析等。
+                p.p-1 东方龙马是专注于高端软件技术，以"数据库服务"及"应用性能管理"为核心业务的国内领先IT专业服务公司
+            .list
+                ul
+                    li
+                        a(href='life_cycle')
+                            img(src='/public/images/solution/01e1c5f8e528c78342147b3808a091d4.png')
+                    li
+                        a(href='perform')
+                            img(src='/public/images/solution/9023cb9ec3bc296e4feb99c8aa7986ec.png')
+                    li
+                        a(href='big_data')
+                            img(src='/public/images/solution/2c04ac34aa8c9af94e10f573e0d28e6f.png')
+                .h10
+
+    .phoneBg
+        .wal
+            .Solution.listHover
+                ul
+                    li.li_01.slide-B
+                        .imgDiv
+                            i
+                            i.i-1
+                            a(href='life_cycle')
+                                img(src='/public/images/solution/6459cdc728186df5a32722667efa7b4a.jpg')
+                        .name
+                            a(href='life_cycle')
+                                div
+                                    em 数据生命周期服务解决方案
+                                | Data Full Life Cycle Service solutions
+                        .msg 基于数据生命周期的服务解决方案包含生产、访问、保护、迁移集中、归档下线。
+                        .list
+                            dl
+                                dd
+                                    a(href='life_cycle')
+                                        div
+                                            img(src='/public/images/solution/nimg87_1.png')
+                                            img.img2(src='/public/images/solution/nimg87_1_1.png')
+                                        | 生产
+                                dd
+                                    a(href='life_cycle')
+                                        div
+                                            img(src='/public/images/solution/nimg87_2.png')
+                                            img.img2(src='/public/images/solution/nimg87_2_1.png')
+                                        | 访问
+                                dd
+                                    a(href='life_cycle')
+                                        div
+                                            img(src='/public/images/solution/nimg87_3.png')
+                                            img.img2(src='/public/images/solution/nimg87_3_1.png')
+                                        | 保护
+                                dd
+                                    a(href='life_cycle')
+                                        div
+                                            img(src='/public/images/solution/nimg87_4.png')
+                                            img.img2(src='/public/images/solution/nimg87_4_1.png')
+                                        | 迁移集中
+                                dd
+                                    a(href='life_cycle')
+                                        div
+                                            img(src='/public/images/solution/nimg87_5.png')
+                                            img.img2(src='/public/images/solution/nimg87_5_1.png')
+                                        | 归档下线
+                        .h10
+                    li.li_02.slide-B.liOdd
+                        .imgDiv
+                            i
+                            i.i-1
+                            a(href='perform')
+                                img(src='/public/images/solution/dc3fad5b484220bf0f201b57f6ce671a.jpg')
+                        .name
+                            a(href='perform')
+                                div
+                                    em 全系列性能管理解决方案
+                                | Full Series Performance Management Solutions
+                        .msg
+                        .list
+                            dl
+                                dd
+                                    a(href='perform')
+                                        div
+                                            img(src='/public/images/solution/nimg87_6.png')
+                                            img.img2(src='/public/images/solution/nimg87_6_1.png')
+                                        | 应用性能管理
+                                dd
+                                    a(href='perform')
+                                        div
+                                            img(src='/public/images/solution/nimg87_7.png')
+                                            img.img2(src='/public/images/solution/nimg87_7_1.png')
+                                        | 业务性能管理
+                                dd
+                                    a(href='perform')
+                                        div
+                                            img(src='/public/images/solution/nimg87_8.png')
+                                            img.img2(src='/public/images/solution/nimg87_8_1.png')
+                                        | 网络性能管理
+                                dd
+                                    a(href='perform')
+                                        div
+                                            img(src='/public/images/solution/nimg87_9.png')
+                                            img.img2(src='/public/images/solution/nimg87_9_1.png')
+                                        | 虚拟化性能管理
+                        .h10
+                    li.li_03.slide-B
+                        .imgDiv
+                            i
+                            i.i-1
+                            a(href='big_data')
+                                img(src='/public/images/solution/650271263f9e4cba97d40b3cf1474b05.jpg')
+                        .name
+                            a(href='big_data')
+                                div
+                                    em 大数据分析解决方案
+                                | Big Data Analysis Solution
+                        .msg
+                            | 东方龙马的大数据服务已深入银行、证券、运营商、广告、政府、移动互联网、军队等十多个行业，协助客户收集并整合海量业务数据，提供多维度的数据分析图表，预测业务发展趋势，为经营决策提供直观、精确、实时的数据支撑。
+                        .list
+                            dl
+                                dd
+                                    a(href='big_data')
+                                        div
+                                            img(src='/public/images/solution/nimg87_10.png')
+                                            img.img2(src='/public/images/solution/nimg87_10_1.png')
+                                        | 业务行为大数据分析
+                                dd
+                                    a(href='big_data')
+                                        div
+                                            img(src='/public/images/solution/nimg87_11.png')
+                                            img.img2(src='/public/images/solution/nimg87_11_1.png')
+                                        | 用户行为大数据分析
+                        .h10
+    a.topA(href='javascript:;')
+
+block script
+    script.

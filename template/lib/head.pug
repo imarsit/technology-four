@@ -1,0 +1,69 @@
+.headDiv.pageHead
+    a.logo(href='/')
+    a.navA(href='javascript:;')
+    .nav
+        .bg
+        ul
+            li
+                a.on(href='/') 首页
+            li
+                a(href='solution') 解决方案
+            li
+                a(href='aml') 安码龙
+            li
+                a(href='cases') 成功案例
+            li
+                a(href='news') 新闻中心
+            li
+                a(href='about') 关于我们
+            li
+                a(href="javascript:;") 技术论坛
+    .topSearch
+        form#search
+            input.input1.input_hover(type='text', value='请输入方案名称', title='请输入方案名称', name='keyboard')
+            input.btn1(type='button', onclick='searchSubmit()', value='')
+    style(type='text/css').
+
+    .topBtn.bdsharebuttonbox
+        ul
+            li.li_01
+                a.bds_tsina(title='分享到新浪微博', href='javascriipt:;', data-cmd='tsina')
+            li.li_02
+                a.bds_weixin(title='分享到微信', href='javascriipt:;', data-cmd='weixin')
+            li.li_03
+                a.bds_tqq(title='分享到腾讯微博', href='javascriipt:;', data-cmd='tqq')
+block script
+    script.
+        window._bd_share_config = {
+            "common": {
+                "bdSnsKey": {},
+                "bdMini": "2",
+                "bdMiniList": false,
+                "bdStyle": "1",
+                "bdSize": "16"
+            },
+            "share": {
+                "bdSize": 16,
+                "bdCustomStyle": "/"
+            }
+        }
+        with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion=' + ~(-new Date() / 36e5)];
+
+        $("#search").keypress(function (e) {
+            if (e.which == 13) {
+                searchSubmit();
+                return false;
+            }
+        });
+        function searchSubmit() {
+            $("#search").ajaxSubmit({
+                success: function (data) {
+                    data = eval('(' + data + ')');
+                    if (data.status == 'Faild') {
+                        layer.msg(data.message, function () { });
+                    } else {
+                        window.location.href = data.gotourl;
+                    }
+                }
+            });
+        }

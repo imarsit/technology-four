@@ -1,0 +1,193 @@
+extends layout
+
+block vars
+    - let title = '新闻动态'
+block content
+    .pageNav
+        ul
+            li
+                a.on(href='news') 公司动态
+                em
+            li
+                a(href='news') 行业资讯
+    .pageBanner2(style='background: #000;')
+        .wal
+            .title
+                div 新闻中心
+            .content 近年来，我们专注于提供全系列企业级性能管理方案和相关的IT服务，在帮助用户提高业务效率和整体生产力的同时，降低运营和运维成本。
+            .more
+                a(href='news') 了解详情
+    .zbanner
+    .phoneBg
+        .wal
+            .case_01.slide-B
+                .title
+                    div 公司动态
+                    | Company News
+                a(href='')
+                .content
+                    | 东方龙马始终以传承，开放，包容，突破为公司理念，以市场为导向，
+                    br
+                    |         为各行业客户提供全方位的解决方案及专业技术服务, 致力为中国的信息化作建设出最大的贡献。
+                    br
+            .news
+                ul
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/23003619729e509898e5c0de8d8dff4c.jpg')
+                            .name 大数据的数据化能让算命公司上市？---东方龙马
+                            .box
+                                .name 大数据的数据化能让算命公司上市？---东方龙马
+                                p 大数据带来的便捷早已深入我们的生活，下面，我将从数据化的角度给大家展示一下大数据的实用及数据化给我们带来的惊喜。...
+                            .time 2016-11-10
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/5c329d4b92841427e8a3bfd4e5ccbc44.jpg')
+                            .name 大数据环境下的意图搜索技术 | 东方龙马
+                            .box
+                                .name 大数据环境下的意图搜索技术 | 东方龙马
+                                p
+                                    | 尽管大数据已呈爆炸式增长，以致带动不少相关技术的衍生与发展。但是，不少人还是对大数据技术的作用感到云里雾里。今天，OLM小编和大家分享大数据的其中一项重要技术“意图搜索技术”。...
+                            .time 2016-11-10
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/04390f2c25ef1a2732b0303a6329b697.jpg')
+                            .name 动态 | OLM受邀参展甲骨文云大会圆落幕！
+                            .box
+                                .name 动态 | OLM受邀参展甲骨文云大会圆落幕！
+                                p
+                                    | 11.9甲骨文云大会如约在上海嘉里大酒店拉开帷幕。东方龙马受邀参展此大会，备受众多嘉宾的关注与喜爱！一直非常低调的东方龙马，居然早已闻名遐迩，吸引众多嘉宾驻足痴望.........
+                            .time 2016-11-10
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/84662bf56d4b32d8303680bd1895a69d.jpg')
+                            .name OLM受邀参加11.9甲骨文云大会 | OLM与你上海见！
+                            .box
+                                .name OLM受邀参加11.9甲骨文云大会 | OLM与你上海见！
+                                p 东方龙马公司受邀参加2016甲骨文云大会，于11月9日在上海举办。东方龙马展区为白银8号，大会当天，我们将带着一系列解决方案与您相会。...
+                            .time 2016-11-04
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/000602bacf5f14c76796efd894e2b8aa.jpg')
+                            .name 大数据的十三个应用场景
+                            .box
+                                .name 大数据的十三个应用场景
+                                p
+                                    | 这一系列问题的背后，其实都隐藏着大数据的身影——不仅彰显着大数据的巨大价值，更直观地体现出大数据在各个行业的广阔应用。这些行业应用也都更直白地告诉人们，什么是大数据……...
+                            .time 2016-09-01
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/5508e2e15a6ce6403df30d8d81504040.jpg')
+                            .name 大数据分析的特点
+                            .box
+                                .name 大数据分析的特点
+                                p 大数据分析主要包括5 个基本方面，即数据可视化、数据挖掘算法、数据预测性分析、语义引擎和数据筛选和数据处理。...
+                            .time 2016-09-01
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/ad8a251058797edb0bc45b91f5d94c32.jpg')
+                            .name 网络性能管理，最大化企业在线体验的关键
+                            .box
+                                .name 网络性能管理，最大化企业在线体验的关键
+                                p
+                                    | 你清楚这些数字的价值么？每100ms的延时，对于亚马逊来讲，意味着1%的销售收入下降对于Yaboo来说，1秒的服务器延迟就会导致2.8%的收入下降微软的实验表明，每增加100ms的速度会转换成...
+                            .time 2016-09-01
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/d55a3606f6ef80d1be6a6fe67246285a.jpg')
+                            .name 东方龙马携手DELL公司召开技术研讨会
+                            .box
+                                .name 东方龙马携手DELL公司召开技术研讨会
+                                p
+                                    | 6月24日北京东方龙马携手全球知名IT厂商DELL公司及国内金融、保险、能源等众多大型企业级用户，在北京昆泰酒店隆重召开DELL-QUEST软件产品技术发布研讨会。...
+                            .time 2016-08-23
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/5f7e821d82501d76a8357d49cf25e13a.jpg')
+                            .name 东方龙马喜获ISO20000信息服务管理体系认证证书
+                            .box
+                                .name 东方龙马喜获ISO20000信息服务管理体系认证证书
+                                p 近日，东方龙马作为专业的IT服务供应商再传喜讯：获得ISO20000服务管理标准认证证书，又一次向业界展示了其在IT专业服务领域的雄厚实力！...
+                            .time 2016-08-23
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/78b865f6e89917b9e5fba34f44425324.jpg')
+                            .name 东方龙马受邀2015甲骨文客户支持服务合作伙伴会议圆满结束
+                            .box
+                                .name 东方龙马受邀2015甲骨文客户支持服务合作伙伴会议圆满结束
+                                p 甲骨文公司成立38周年、甲骨文中国区成立28周年之际，2015甲骨文客户支持服务合作伙伴会议，对甲骨文的过去、现在和未来进行了总结和展望。...
+                            .time 2016-08-22
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/93e0b032d70956be62dc3a082e769838.jpg')
+                            .name 热烈庆祝安码龙科技有限公司上海研发中心于2016年1月21日正式启用
+                            .box
+                                .name 热烈庆祝安码龙科技有限公司上海研发中心于2016年1月21日正式启用
+                                p 北京安码龙科技有限公司(简称安码龙)于2015年12月在北京正式成立，其研发中心设立于上海。...
+                            .time 2016-08-21
+                            .btn
+                    li.slide-B
+                        a(href='news_show')
+                            .imgDiv
+                                img(src='/public/images/news/afe44426551bdf4b360e2d011238bd94.jpg')
+                            .name 东方龙马公司2014年度销售年会于2015年1月28日于延庆辉煌假日酒店召开
+                            .box
+                                .name 东方龙马公司2014年度销售年会于2015年1月28日于延庆辉煌假日酒店召开
+                                p
+                                    | 北京东方龙马软件发展有限公司2015年迎新年会在北京的后花园延庆辉煌假日酒店举行。,东方龙马公司总经理陈向东先生出席了本次年度晚会，共同见证和分享了东方龙马年会温馨而精彩的瞬间。...
+                            .time 2016-08-15
+                            .btn
+                span.clear
+            .pageMore.slide-B
+                | 没有更多了！
+
+    a.topA(href='javascript:;')
+
+block script
+    script.
+        $(function(){
+        $(document).on("click",".pageMore > a",function(){  
+            var _page = $(this).data('page');
+            $.getJSON('/e/enews/',{'enews':'GetMore','classid':"6",'page':_page}, function(data){
+            var html = '';
+            if(!(data['list'] == null)){  
+                
+                $.each(data['list'],function(i,v){
+                html += '<li class="slide-B">';
+                html += '<a href="'+v['titleurl']+'">';
+                html += '<div class="imgDiv"><img src="'+v['titlepic']+'"/></div>';
+                html += '<div class="name">'+v['title']+'</div>';
+                html += '<div class="box"><div class="name">'+v['title']+'</div>';
+                html += '<p>'+v['smalltext']+'...</p>';
+                html += '</div><div class="time">'+v['newstime']+'</div>';
+                html += '<div class="btn"></div></a>';
+                html += '</li>';
+                });
+                
+            }
+            $(html).appendTo(".news ul");
+            $(".pageMore").html(data['page']);
+            });
+        });
+        });

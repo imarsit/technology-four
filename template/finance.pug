@@ -1,0 +1,215 @@
+extends layout
+
+block vars
+    - let title = '金融行业'
+
+block content
+    .pageBanner2(style='background:#000')
+        .wal
+            .title
+                div
+                    | 金融行业BPM 
+                    span 典型案例
+                | Managing your data intelligently and fully
+            .content
+                | 东方龙马在全国超过400个大客户的数据库及应用中间件管理经验,管理超过1500个系统,涉及政府、金融、电信、税务、制造等各个行业:
+            .more
+                a(href='javascript:;') 了解详情
+    .phoneBg
+        .wal
+
+            .caseShow_01.listHover.slide-B
+                ul
+                    li
+                        .title
+                            div
+                                em 客户背景
+                            | Client Background
+                        .content
+                            | 一家全国性股份制商业银行，在全国拥有 45 家分行、855 家网点，为客户提供多种金融服务。截至 2015 年 6 月末，资产总额达到 25,705.08 亿元，并拥有全国第二家获得银监会批准的银行资金业务专营机构。为其客户提供全方位综合金融服务，打造综合金融的核心优势，以资源整合、平台经营、专业服务为导向,积极创新产品和业务模式，以差异化的服务、稳健的经营、出色的绩效，为其客户、员工、股东以及社会创造更大的价值。
+                        .imgDiv
+                            img(src='/public/images/finance/nimg344_1.png')
+                    li.liOdd
+                        .title
+                            div
+                                em I T 环境
+                            | IT Environment
+                        .content.content2
+                            | 应用系统：网银、柜面、ATM、支付平台、三方存管、黄金交易等
+                            br
+                            |         系统平台：AIX、HP、Solaris、Windows、Redhat
+                            br
+                            |         基础组件：Apache、Oracle、VMware、Citrix、Juniper、F5
+                        .imgDiv
+                            img(src='/public/images/finance/nimg344_2.png')
+
+    .caseShow_02.slide-B
+        .wal
+            .title
+                div 问题与挑战
+                | Problems And Challenges
+            .list.listHover
+                ul
+                    li
+                        .imgDiv
+                            a(href='javascript:;')
+                                img(src='/public/images/finance/nimg103_1.png')
+                        .content
+                            | 无法监控业务异常
+                            br
+                            | 问题发现常常滞后于用户投诉
+                    li
+                        .imgDiv
+                            a(href='javascript:;')
+                                img(src='/public/images/finance/nimg103_2.png')
+                        .content
+                            | 故障排查缺乏明确方向
+                            br
+                            | 应急效率低下
+                    li
+                        .imgDiv
+                            a(href='javascript:;')
+                                img(src='/public/images/finance/nimg103_3.png')
+                        .content
+                            | 运维完全依赖日志、代码
+                            br
+                            | 故障场景复现困难
+            .h10
+    .phoneBg
+        .wal
+            .caseShow_03.slide-B
+                .title
+                    div 布署情况
+                    | Deployment Overview
+                .content
+                    | 项目一期建成了行内第一个应用交易监控平台，监控了网银、支付、黄金、三方存管等 10 个业务系统，监控点分布在4 个网络区域，覆盖各个主要系统组件，包括防火墙、负载均衡、Web&App 服务器、DB 等。
+                .list
+                    ul
+                        li
+                            em 业务系统数量
+                            span 10 个
+                        li
+                            em 监控点数量
+                            span 36 个
+                        li
+                            em 解码协议种类
+                            span 28 种
+                        li
+                            em 涉及网络区域
+                            span 4 个
+                        li
+                            em 监控设备数量
+                            span 6 台
+                .imgDiv
+                    img(src='/public/images/finance/nimg593.png')
+    .phoneBg.caseShow_04.slide-B
+        .wal
+            .title
+                div 监控大屏
+                | Problems And Challenges
+            .imgDiv
+                img(src='/public/images/finance/nimg1049.png')
+    .phoneBg
+        .wal
+            .caseShow_05.slide-B
+                .title
+                    div 用户收益
+                    | Problems And Challenges
+                .list.listHover
+                    ul
+                        li
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/finance/nimg145_1.png')
+                                    img.img2(src='/public/images/finance/nimg145_1_1.png')
+                            .msg
+                                | 应用异常发现更及时
+                                br
+                                | 不再被动的依靠用户反馈
+                        li
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/finance/nimg145_2.png')
+                                    img.img2(src='/public/images/finance/nimg145_2_1.png')
+                            .msg
+                                | 应用异常发现更及时
+                                br
+                                | 不再被动的依靠用户反馈
+                        li
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/finance/nimg145_3.png')
+                                    img.img2(src='/public/images/finance/nimg145_3_1.png')
+                            .msg
+                                | 加速故障排查
+                                br
+                                | 加速定位故障节点及原因
+                                br
+                                | 理清部门责任
+                        li
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/finance/nimg145_4.png')
+                                    img.img2(src='/public/images/finance/nimg145_4_1.png')
+                            .msg
+                                | 深入至交易级
+                                br
+                                | 7*24不间断数据存储
+                                br
+                                | 数据回溯便捷
+                .h10
+    .caseShow_06.slide-B
+        .wal
+            ul
+                li
+                    .info
+                        b 2
+                        span PRE 11
+                    .msg 预警性能异常
+                li
+                    .info
+                        b 3
+                        span PRE 11
+                    .msg 定位故障原因
+                li
+                    .info
+                        b 8
+                        span PRE 11
+                    .msg 加速故障分析
+            .h10
+    .phoneBg
+        .wal
+            .caseShow_05.slide-B
+                .title
+                    div 业务分析监控流程
+                    | Business analysis monitoring process
+    .caseShow_07.slide-B
+        .wal
+            div
+                img(src='/public/images/finance/1474259590257925.png')
+    .phoneBg
+        .wal
+            .caseShow_08.listHover.slide-B
+                ul
+                    li.li_01
+                        .name
+                            a(href='telecom') 电信行业APM
+                        .box
+                            .content
+                                | 通过最终用户的体验测量应用的性能，是对业务系统性能最有效的度量。安码龙的最终用户体验管理（EUEM）的解决方案，给你的不只是了解用户体验，而是真正理解它，将终端用户的使用环境及企业业务质量有效的管理在一起。
+                            .btn
+                                a(href='telecom')
+                    li.li_02
+                        .name
+                            a(href='finance') 金融行业BPM
+                        .box
+                            .content
+                                | 为其客户提供全方位综合金融服务，打造综合金融的核心优势，以资源整合、平台经营、专业服务为导向, 积极创新产品和业务模式，以差异化的服务、稳健的经营、出色的绩效，为其客户、员工、股东以及社会创造更大的价值。
+                            .btn
+                                a(href='finance')
+                .h10
+    a.topA(href='javascript:;')
+
+
+block script
+    script.

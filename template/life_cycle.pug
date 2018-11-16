@@ -1,0 +1,229 @@
+extends layout
+
+block vars
+    - let title = '生命周期'
+
+block content
+    .pageBanner(style='background:#1d95cc')
+        .wal
+            .pageNow
+                a(href='/') 首页
+                |  > 
+                a(href='solution') 解决方案
+                |  > 
+                a(href='life_cycle') 数据生命周期服务解决方案
+            .box
+                .name
+                    div 解决方案
+                    em Solutions
+                p
+                    | 我们专注于提供全系列企业级性能管理方案和相关的IT服务，在帮助用户提高业务效率和整体生产力的同时，降低运营和运维成本。全系列性能管理方案包括：数据库管理，交易性能管理，核心业务保障管理，网络性能管理和运营大数据分析等。
+                p.p-1 东方龙马是专注于高端软件技术，以"数据库服务"及"应用性能管理"为核心业务的国内领先IT专业服务公司
+            .list
+                ul
+                    li
+                        a(href='life_cycle')
+                            img(src='/public/images/life_cycle/01e1c5f8e528c78342147b3808a091d4.png')
+                    li
+                        a(href='perform')
+                            img(src='/public/images/life_cycle/9023cb9ec3bc296e4feb99c8aa7986ec.png')
+                    li
+                        a(href='big_data')
+                            img(src='/public/images/life_cycle/2c04ac34aa8c9af94e10f573e0d28e6f.png')
+                .h10
+    .phoneBg
+        .wal
+            a(href='javascript:;', name='wal')
+
+            .Solution_01.slide-B
+                .name
+                    div
+                        em 数据生命周期服务解决方案
+                    | Data Full Life Cycle Service solutions
+                .msg 基于数据生命周期的服务解决方案包含生产、访问、保护、迁移集中、归档下线。
+                .list
+                    dl
+                        dd
+                            a.on(href='javascript:;')
+                                div
+                                    img(src='/public/images/life_cycle/nimg87_1.png')
+                                    img.img2(src='/public/images/life_cycle/nimg87_1_1.png')
+                                | 生产
+                        dd
+                            a(href='javascript:;')
+                                div
+                                    img(src='/public/images/life_cycle/nimg87_2.png')
+                                    img.img2(src='/public/images/life_cycle/nimg87_2_1.png')
+                                | 访问
+                        dd
+                            a(href='javascript:;')
+                                div
+                                    img(src='/public/images/life_cycle/nimg87_3.png')
+                                    img.img2(src='/public/images/life_cycle/nimg87_3_1.png')
+                                | 保护
+                        dd
+                            a(href='javascript:;')
+                                div
+                                    img(src='/public/images/life_cycle/nimg87_4.png')
+                                    img.img2(src='/public/images/life_cycle/nimg87_4_1.png')
+                                | 迁移集中
+                        dd
+                            a(href='javascript:;')
+                                div
+                                    img(src='/public/images/life_cycle/nimg87_5.png')
+                                    img.img2(src='/public/images/life_cycle/nimg87_5_1.png')
+                                | 归档下线
+                .h10
+                .btn
+                    div
+                        img(src='/public/images/life_cycle/nimg32.png')
+                    | 方案详情
+            .Solution_02.slide-B
+                .btnDiv
+                    .img
+                        img(src='/public/images/life_cycle/3d7dc0a83bcc9bc7195b73c3a4be3942.png' usemap='#Map')
+                    map#Map(name='Map')
+                        area(shape='poly', coords='194,6,194,204,385,142,301,76,298,61,282,56,272,59,200,5,196,5', href='javascript:;')
+                        area(shape='poly', coords='197,207,313,369,350,268,363,264,363,255,359,244,359,228,385,154,382,148,378,147', href='javascript:;', )
+                        area(shape='poly', coords='193,206,74,369,184,373,215,372,308,369,194,206', href='javascript:;')
+                        area(shape='poly', coords='190,202,3,143,34,241,32,260,41,268,73,366', href='javascript:;')
+                        area(shape='poly', coords='193,201,193,5,104,65,87,59,86,77,5,140', href='javascript:;')
+                    .list
+                        ul
+                            li.li_01.on
+                                img(src='/public/images/life_cycle/38868b7c5784531355de1e3c953cede6.png')
+                                img.img2(src='/public/images/life_cycle/8bfaaf049905a9304f8e620725158290.png')
+                            li.li_02
+                                img(src='/public/images/life_cycle/img193_2.png')
+                                img.img2(src='/public/images/life_cycle/img193_2on.png')
+                            li.li_03
+                                img(src='/public/images/life_cycle/img193_3.png')
+                                img.img2(src='/public/images/life_cycle/img193_3on.png')
+                            li.li_04
+                                img(src='/public/images/life_cycle/img193_4.png')
+                                img.img2(src='/public/images/life_cycle/img193_4on.png')
+                            li.li_05
+                                img(src='/public/images/life_cycle/img193_5.png')
+                                img.img2(src='/public/images/life_cycle/img193_5on.png')
+                .box.box-1
+                    .name
+                        div 生产：数据库架构设计
+                        | Production
+                    .list2
+                        ul.list-paddingleft-2
+                            li
+                                p 数据使用模式分析
+                            li
+                                p 业务流程分析
+                            li
+                                p 数据分类
+                            li
+                                p 数据存储策略制定
+                            li
+                                p 数据结构设计
+                    .btn.prompt_fun
+                        a(href='javascript:;') 立即咨询
+            .Solution_03.slide-B
+                .title
+                    div 合作伙伴
+                    | cooperative Partners
+                .list3.listHover
+                    ul
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/life_cycle/16e246b627e8d22c86806455bc1ac5f3.png')
+                                    img.img2(src='/public/images/life_cycle/de974a6f048b3ba181405e6e28194033.png')
+                            .name
+                                | 安码龙APProbe产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/life_cycle/7b171b51cc4bffaf476811e373f0b285.png')
+                                    img.img2(src='/public/images/life_cycle/0df1346674345bc49940e0dcf6675c7e.png')
+                            .name
+                                | APPdynamics产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/life_cycle/37eab058fd4fe424fbf90ed061e6d546.png')
+                                    img.img2(src='/public/images/life_cycle/279a6fa7cac34c334f3c03fc54090552.png')
+                            .name
+                                | DELL数据库管理产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/life_cycle/de80f2052457e56f76f8d9824f9aa64b.png')
+                                    img.img2(src='/public/images/life_cycle/3c2addab3cf301784312d1dbc2ada621.png')
+                            .name
+                                | Easyview产品
+                                i
+                        li.li_01
+                            .imgDiv
+                                a(href='javascript:;')
+                                    img(src='/public/images/life_cycle/66726786b8e8f081bf5668547733fe29.png')
+                                    img.img2(src='/public/images/life_cycle/2be7e50b7624331e2f264d654ee3ada7.png')
+                            .name
+                                | Veeam虚拟化产品
+                                i
+                    .h10
+                .list2
+                    ul
+                        li.li_01
+                            a(href='life_cycle')
+                                .img
+                                    img(src='/public/images/life_cycle/01e1c5f8e528c78342147b3808a091d4.png')
+                                .name 数据生命周期服务解决方案
+                                .btn
+                        li.li_02
+                            a(href='perform')
+                                .img
+                                    img(src='/public/images/life_cycle/9023cb9ec3bc296e4feb99c8aa7986ec.png')
+                                .name 全系列性能管理解决方案
+                                .btn
+                        li.li_03
+                            a(href='big_data')
+                                .img
+                                    img(src='/public/images/life_cycle/2c04ac34aa8c9af94e10f573e0d28e6f.png')
+                                .name 大数据分析解决方案
+                                .btn
+                    .h10
+
+    a.topA(href='javascript:;')
+
+block script
+    script.
+        function prompt_fun(a){
+            $(a).after("<div id='Layer1'></div>"); 
+            $('#Layer1').fadeTo("fast",0.6); 
+
+            var img = new Image();
+            img.src = $(a).children('img').attr('src');
+            var width = img.width;
+            var height = img.height;
+            if(width > $(window).width()){
+                height = (($(window).width()*0.9)*height)/width;
+                width = $(window).width()*0.9;
+            }
+            var marginTop = -(height/2);
+            var marginLeft = -(width/2);
+            $(a).css({
+                width:width,
+                height:height,
+                marginTop:marginTop,
+                marginLeft:marginLeft
+            }).show();
+            
+            $('#Layer1').click(function(){
+                close_prompt_fun(a);
+            })
+        }
+        function close_prompt_fun(a){
+            $(a).hide();
+            $('#Layer1').fadeOut("slow",function(){
+                $('#Layer1').remove();
+            }); 
+        }
